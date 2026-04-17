@@ -1,0 +1,174 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #C1C1C1;
+}
+
+@theme {
+  --font-sans: var(--font-open-sans);
+  --font-inter: var(--font-inter);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-open-sans);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--font-open-sans), serif;
+        @apply text-[#FFFFFF]
+    }
+
+    h1 {
+        @apply text-4xl sm:text-5xl md:text-6xl lg:text-[4.375rem] lg:leading-21 tracking-[-0.01em] font-bold
+    }
+
+    h2 {
+        @apply text-2xl md:text-3xl lg:text-[2.625rem] lg:leading-[3.15rem] font-bold
+    }
+
+    h3 {
+        @apply text-xl md:text-2xl lg:text-[2rem] lg:leading-[2.8rem] font-bold
+    }
+
+    h4 {
+        @apply text-xl md:text-2xl lg:text-[1.875rem] lg:leading-10.5 font-bold
+    }
+
+    h5 {
+        @apply text-lg md:text-xl lg:text-[1.5rem] lg:leading-[2.1rem] font-bold
+    }
+    p{
+      @apply text-sm sm:text-base sm:leading-[1.4rem] font-normal
+    }
+}
+
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+  width: 100%;
+
+  @media (min-width: 87rem) {
+    max-width: 87rem;
+  }
+}
+@utility glass-pill {
+  background: #1A1A1A;
+  background-blend-mode: plus-lighter;
+  box-shadow: inset 0px 0px 22px rgba(242, 242, 242, 0.5),
+              inset 0px 0px 0px 1px #999999,
+              inset 2px 2px 1px -2px #B3B3B3,
+              inset -2px -2px 1px -2px #B3B3B3,
+              inset 3px 3px 0px -3px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 100px;
+}
+
+.goog-te-gadget img {
+    display: none !important;
+}
+
+.VIpgJd-ZVi9od-ORHb-OEVmcd {
+    opacity: 0 !important;
+    height: 0 !important;
+}
+body {
+    top: 0 !important;
+}
+
+.Toastify__toast-container {
+    z-index: 999999999 !important;
+}
+
+.jami-link {
+  cursor: pointer;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.jami-link--arrowed {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 2rem;
+}
+
+.arrow-icon {
+  background-color: #000000;
+  color: white;
+  border-radius: 50%;
+  position: relative;
+  top: -1px;
+  transition: transform 0.3s ease;
+}
+
+.arrow-icon--circle {
+  stroke-dasharray: 95;
+  stroke-dashoffset: 95;
+  transition: stroke-dashoffset 0.3s ease;
+}
+
+.jami-link--arrowed:hover .arrow-icon {
+  transform: translate3d(5px, 0, 0);
+}
+
+.jami-link--arrowed:hover .arrow-icon--circle {
+  stroke-dashoffset: 0;
+}
+
+.arrow-icon-con {
+  background-color: #ffffff;
+  color: #FC00FF;
+  border-radius: 50%;
+  position: relative;
+  top: -1px;
+  transition: transform 0.3s ease;
+}
+.arrow-icon--circle-con{
+  stroke-dasharray: 95;
+  stroke-dashoffset: 95;
+  transition: stroke-dashoffset 0.3s ease;
+}
+.jami-link--arrowed:hover .arrow-icon-con {
+  transform: translate3d(5px, 0, 0);
+}
+
+.jami-link--arrowed:hover .arrow-icon--circle-con {
+  stroke-dashoffset: 0;
+}
+.arrow-icon--case{
+  color: #5B5B5B;
+}
+.arrow-icon-case {
+  background-color: #5B5B5B;
+  border-radius: 50%;
+  position: relative;
+  top: -1px;
+  transition: transform 0.3s ease;
+}
+ .arrow-icon--circle-case{
+  stroke-dasharray: 95;
+  stroke-dashoffset: 95;
+  transition: stroke-dashoffset 0.3s ease;
+}
+.jami-link--arrowed:hover .arrow-icon-case {
+  transform: translate3d(5px, 0, 0);
+}
+
+.jami-link--arrowed:hover .arrow-icon--circle-case {
+  stroke-dashoffset: 0;
+}

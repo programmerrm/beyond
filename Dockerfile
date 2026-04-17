@@ -1,0 +1,30 @@
+#############################################################################
+############### NEXT JS PRODUCTION DOCKERFILE CONFIGURATION #################
+#############################################################################
+
+# BASE IMAGE
+FROM node:22-alpine
+
+# WORKING DIR
+WORKDIR /app
+
+# MAX SIZE
+ENV NODE_OPTIONS="--max_old_space_size=2048"
+
+# COPY PACKAGE JSON
+COPY package*.json ./
+
+# NPM PACKEGS INSTALL
+RUN npm ci
+
+# COPY FULL PROJECT
+COPY . .
+
+# BUILD PROJECT FOR PRODUCTION
+RUN npm run build
+
+# EXPOSE PORT
+EXPOSE 3000
+
+# REAL DOMAIN RUN FRONTEND PROJECT
+CMD ["npm", "run", "start"]
