@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Button from "../button/button";
-import serviceImage1 from "../../assets/img/predictive-system.png";
-import serviceImage2 from "../../assets/img/operational-system.png";
-import serviceImage3 from "../../assets/img/automation-system.png";
-import serviceImage4 from "../../assets/img/development-system.png";
+import serviceImage1 from "../../assets/img/intelligence.svg";
+import serviceImage2 from "../../assets/img/operational.svg";
+import serviceImage3 from "../../assets/img/automation.svg";
+import serviceImage4 from "../../assets/img/custom-intelligence.svg";
 import ServiceCard from "./serviceCard";
 
 export default function Service() {

@@ -31,6 +31,12 @@ export default function ConsultationSection() {
                 width={1060}
                 height={490}
               />
+              {/* <iframe 
+  src="https://cal.com/md.shafiq-ahmad-4ow4pe/30min" 
+  width="100%" 
+  height="600" 
+  frameBorder="0">
+</iframe> */}
             </motion.div>
           </div>
         </div>

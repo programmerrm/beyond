@@ -4,6 +4,7 @@ import DeliverableSection from "@/components/deliverables/deliverable";
 import DeploymentSection from "@/components/deployment/deployment";
 import FAQSection from "@/components/faq-section/faqSection";
 import Footer from "@/components/footer/footerSection";
+import Header from "@/components/header/header";
 import HeroSection from "@/components/herosection/HeroSection";
 import Implementation from "@/components/implementation/implementation";
 import LeadershipSection from "@/components/leadership/leadership";
@@ -21,6 +22,7 @@ export default function HomePage() {
   return (
     <main className=" scroll-smooth bg-[#050505]">
 
+      <Header />
       <HeroSection />
       <OurMission />
       <WhyBeyond />

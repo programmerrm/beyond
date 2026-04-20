@@ -172,3 +172,11 @@ body {
 .jami-link--arrowed:hover .arrow-icon--circle-case {
   stroke-dashoffset: 0;
 }
+section {
+  scroll-margin-top: 150px;
+}
+@media screen and (max-width: 640px){
+  section {
+  scroll-margin-top: 100px;
+}
+}

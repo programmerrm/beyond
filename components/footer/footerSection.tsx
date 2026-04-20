@@ -5,26 +5,48 @@ import Link from "next/link";
 import type { MouseEvent } from "react";
 import Image from "next/image";
 import aiImage from "../../assets/img/ai.png"
-import { Headphones } from "lucide-react";
 
 export default function Footer() {
 
-    const smoothScroll = (
-        e: MouseEvent<HTMLAnchorElement>,
-        id: string
-    ) => {
-        if (id.startsWith("/#")) {
-            e.preventDefault();
+    // const smoothScroll = (
+    //     e: MouseEvent<HTMLAnchorElement>,
+    //     id: string
+    // ) => {
+    //     if (id.startsWith("/#")) {
+    //         e.preventDefault();
 
-            const section = document.getElementById(id.replace("/#", ""));
-            if (section) {
-                section.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start",
-                });
-            }
-        }
-    };
+    //         const section = document.getElementById(id.replace("/#", ""));
+    //         if (section) {
+    //             section.scrollIntoView({
+    //                 behavior: "smooth",
+    //                 block: "start",
+    //             });
+    //         }
+    //     }
+    // };
+    const smoothScroll = (
+    e: MouseEvent<HTMLAnchorElement>,
+    id: string
+) => {
+    if (id.startsWith("/#")) {
+        e.preventDefault();
+
+        const section = document.getElementById(id.replace("/#", ""));
+        if (!section) return;
+
+        const offset = 50;
+
+        const top =
+            section.getBoundingClientRect().top +
+            window.pageYOffset -
+            offset;
+
+        window.scrollTo({
+            top,
+            behavior: "smooth",
+        });
+    }
+};
 
     return (
         <section>

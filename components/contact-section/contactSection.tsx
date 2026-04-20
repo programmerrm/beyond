@@ -15,7 +15,7 @@ import Link from "next/link";
 
 export default function ContactSection() {
   return (
-    <section className="py-7 md:py-14">
+    <section className="pb-7 md:pb-14 pt-30 sm:pt-40 lg:pt-50">
       <div className="container">
         <div className="bg-[linear-gradient(270deg,#FCE172_0%,#9747FF_100%)] rounded-3xl p-0.5">
           <div className="bg-black rounded-3xl">
@@ -23,7 +23,7 @@ export default function ContactSection() {
               {/* Left panel */}
               <div className="w-full md:max-w-82 flex flex-col justify-between rounded-[20px] pt-10 md:pt-21 md:pb-18 pl-5 lg:pl-14 text-white">
                 <div>
-                  {/* <p className="text-2xl sm:text-[28px] font-semibold sm:leading-9 text-white max-w-70.5"><span className="text-[#636363]">Book a consultation </span>unlock operational intelligence.</p> */}
+                  
                   <motion.p
                     className="text-2xl sm:text-[28px] font-semibold sm:leading-9 text-white max-w-70.5"
                     initial={{ opacity: 0, y: 50 }}
@@ -35,12 +35,6 @@ export default function ContactSection() {
                     unlock operational intelligence.
                   </motion.p>
 
-                  {/* <div className="mt-7 inline-block">
-                    <GradientButton 
-                      text="Book for consulation"
-                      icon={<Headphones className="h-4 w-4" />}
-                    />
-                  </div> */}
                   <motion.div
                     className="mt-7 inline-block"
                     initial={{ opacity: 0, y: 50 }}
@@ -57,7 +51,6 @@ export default function ContactSection() {
 
                 <div className="space-y-6 md:space-y-12 mt-6 md:mt-0">
                   <div>
-                    {/* <h5 className="mb-3">Contact Details</h5> */}
                     <motion.h5
                       className="mb-3"
                       initial={{ opacity: 0, y: 40 }}
@@ -67,41 +60,7 @@ export default function ContactSection() {
                     >
                       Contact Details
                     </motion.h5>
-                    {/* <div className="space-y-1 text-white/80">
-                      <Link href="tel:+966000115666" className="flex items-center gap-3 text-white">
-                        <div className="w-full max-w-4.75">
-                          <Image
-                            src={phoneIcon}
-                            alt="phoneIcon"
-                            width={19}
-                            height={19}
-                          />
-                        </div>
-                        +966 000 115666
-                      </Link>
-                      <Link href="mailto:info@beyondcode.ae" className="flex items-center gap-3 text-white">
-                        <div className="w-full max-w-4.75">
-                          <Image
-                            src={maileIcon}
-                            alt="maileIcon"
-                            width={19}
-                            height={19}
-                          />
-                        </div>
-                        info@beyondcode.ae
-                      </Link>
-                      <div className="flex items-center gap-3 text-white">
-                        <div className="w-full max-w-4.75">
-                          <Image
-                            src={locationIcon}
-                            alt="phoneIcon"
-                            width={19}
-                            height={19}
-                          />
-                        </div>
-                        Abu Dhabi, UAE
-                      </div>
-                    </div> */}
+                    
                     <motion.div
                       className="space-y-1 text-white/80"
                       initial="hidden"
@@ -176,40 +135,7 @@ export default function ContactSection() {
                     >
                       Social links
                     </motion.h3>
-                    {/* <div className="flex gap-3">
-                      <Link
-                        href="https://instagram.com"
-                        target="_blank"
-                      >
-                        <Image
-                          src={instagramIcon}
-                          alt="Instagram"
-                          className="h-8 sm:h-12 w-8 sm:w-12 object-contain"
-                        />
-                      </Link>
-
-                      <Link
-                        href="https://facebook.com"
-                        target="_blank"
-                      >
-                        <Image
-                          src={facebookIcon}
-                          alt="Facebook"
-                          className="h-8 sm:h-12 w-8 sm:w-12 object-contain"
-                        />
-                      </Link>
-
-                      <Link
-                        href="https://tiktok.com"
-                        target="_blank"
-                      >
-                        <Image
-                          src={tiktokIcon}
-                          alt="TikTok"
-                          className="h-8 sm:h-12 w-8 sm:w-12 object-contain"
-                        />
-                      </Link>
-                    </div> */}
+                    
                     <motion.div
                       className="flex gap-3"
                       initial="hidden"

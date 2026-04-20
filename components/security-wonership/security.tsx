@@ -50,7 +50,7 @@ export default function SecuritySection() {
 
                 <div className="flex flex-col gap-5 relative mt-6 sm:mt-12">
                     
-                    <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-80 sm:w-130 md:w-170 h-75 sm:h-130 md:h-170 opacity-30 blur-[90px] sm:rotate-40">
+                    <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-80 sm:w-130 lg:w-170 h-75 sm:h-130 lg:h-170 opacity-30 blur-[90px] sm:rotate-40">
                         <div className="w-full max-w-134.25 h-133 bg-[#FCE172] absolute top-0 right-0 mix-blend-saturation rounded-full"></div>
                         <div className="w-full max-w-134.25 h-133 bg-[#FF09F4] absolute bottom-0 left-0 mix-blend-saturation rounded-full"></div>
                     </div>

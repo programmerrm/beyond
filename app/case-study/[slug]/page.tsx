@@ -23,7 +23,7 @@ export default async function Page({ params }: CaseStudyProps) {
     const conclusion = singleCaseStudy?.conclusion;
     return (
         <>
-            <section className="pb-14 lg:pb-27.5 pt-7 lg:pt-20">
+            <section className="pb-14 lg:pb-27.5 pt-30 sm:pt-40 lg:pt-50">
                 <div className="container">
                     <div className="max-w-216.25 mx-auto">
 

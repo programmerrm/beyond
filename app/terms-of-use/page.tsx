@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function TermsOfUse() {
     return (
         <>
-            <section className="pt-6 sm:pt-12 lg:pt-21 pb-8 sm:pb-16 lg:pb-32.5">
+            <section className="pt-30 sm:pt-40 lg:pt-50 pb-8 sm:pb-16 lg:pb-32.5">
                 <div className="container">
                     <div className="w-full max-w-312.75 mx-auto space-y-4 sm:space-y-7.5">
                         <div>

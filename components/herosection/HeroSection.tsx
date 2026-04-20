@@ -9,7 +9,6 @@ import Link from "next/link";
 import FeatureCard from "../card/featureCard";
 import Button from "../button/button";
 import GradientButton from "../button/GradientButton";
-import Header from "../header/header";
 export default function HeroSection() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const navItems = [
@@ -24,11 +23,11 @@ export default function HeroSection() {
     ];
 
     return (
-        <section className="">
+        <section className="mt-26">
             {/* Background image */}
 
             <div
-                className="absolute inset-0 bg-cover bg-top bg-no-repeat opacity-40"
+                className="absolute inset-0 bg-cover bg-top bg-no-repeat opacity-40 "
                 style={{ backgroundImage: `url(${heroBg.src})` }}
             >
                 <div className="absolute inset-0 bg-linear-to-b from-black/0 to-black"></div>
@@ -36,19 +35,14 @@ export default function HeroSection() {
                 <div className="w-15.75 h-15.75 bg-[linear-gradient(154.14deg,#664DFF_0.79%,#000000_86.61%)] rounded-full absolute top-80 md:top-115 right-5 md:right-117.5"></div>
             </div>
 
-            <div className="">
-                <div className="absolute top-0 left-0 right-0 h-105 bg-cover bg-top bg-no-repeat"
+            <div>
+                <div className="absolute top-0 left-0 right-0 h-105 bg-cover bg-top bg-no-repeat "
                     style={{ backgroundImage: `url(${heroBgTop.src})` }}>
                 </div>
 
-                {/* HEADER SECTION */}
-                <Header />
-
-                {/* HEADER SECTION END */}
-
                 {/* Hero Content */}
                 <div className="container overflow-hidden">
-                    <div className="mx-auto max-w-245.5 pt-8 md:pt-16 xl:pt-27.25 text-center relative z-20">
+                    <div className="mx-auto max-w-245.5 pt-8 md:pt-16 xl:pt-27.25 text-center relative">
 
                         <motion.h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[4.375rem] leading-10 sm:leading-14 md:leading-18 lg:leading-21 tracking-[-0.01em] font-bold"
                             initial={{ opacity: 0, y: 60 }}
